@@ -2,15 +2,28 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
+        <div style="text-align: center" >
+      <h2 > About Us </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quam!</p>
+      
+      </div>
       </v-col>
 
-      <v-col class="mb-4">
+      <v-col lg="4" class="mb-4">
+        <h1 class="display-2 font-weight-bold mb-3">
+          Welcome to Vuetify
+        </h1>
+
+        <p class="subheading font-weight-regular">
+          For help and collaboration with other Vuetify developers,
+          <br>please join our online
+          <a
+            href="https://community.vuetifyjs.com"
+            target="_blank"
+          >Discord Community</a>
+        </p>
+      </v-col>
+      <v-col lg="4" class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
         </h1>
@@ -25,17 +38,6 @@
         </p>
       </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-
-        <v-row justify="center">
-        </v-row>
-      </v-col>
 
     </v-row>
   </v-container>

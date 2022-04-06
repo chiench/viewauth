@@ -1,28 +1,12 @@
 <template>
   <v-app>
+    <!-- app de giu cho bar o dau  -->
     <v-app-bar
-      app
-      color="primary"
-      dark
+    app
+    height="102"
+    class="bg-white"
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
       </div>
 
       <v-spacer></v-spacer>
@@ -38,19 +22,30 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <InfoComponent/>
+      <ImgaeComponent/>
+      <ServiceComponet/>
     </v-main>
+    <v-divider/>
+    <FooterComponent/>
+
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import InfoComponent from './components/InfoComponent';
+import ImgaeComponent from './components/ImgaeComponent';
+import ServiceComponet from './components/ServiceComponet';
+import FooterComponent from './components/FooterComponent';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    InfoComponent,
+    ImgaeComponent,
+    ServiceComponet,
+    FooterComponent,
   },
 
   data: () => ({
@@ -58,3 +53,8 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.app-bar{
+  background-color: #ffffff;
+}
+</style>
